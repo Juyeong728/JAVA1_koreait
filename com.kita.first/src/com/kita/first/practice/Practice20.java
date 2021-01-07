@@ -14,7 +14,14 @@ public class Practice20 {
 			sum += i;
 			i++;
 		}
+		System.out.printf("합계: %d", sum);   
+		
+		/*
+		while(i++<=max) {
+			sum += i;
+		}
 		System.out.printf("합계: %d", sum);
+		*/
 		
 	}
 }
