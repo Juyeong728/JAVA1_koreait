@@ -57,19 +57,6 @@ public class Practice29 {
 			}
 			
 			for(int i=0; i<LEN; i++) {
-				for(int j=0; j<LEN; j++) {
-					if(myArr[i]==rArr[j]) {
-						ball++;
-					} 
-				}
-				if(myArr[i]==rArr[i]) {
-					strike++;
-					ball--;
-				}
-			}
-			
-			/*
-			for(int i=0; i<LEN; i++) {
 				if(myArr[i]==rArr[i]){
 					strike++;
 					continue;
@@ -80,7 +67,6 @@ public class Practice29 {
 					} 
 				}
 			} 
-			*/
 			
 			System.out.printf("S: %d, B: %d, O: %d\n", strike, ball, LEN-(strike+ball));
 			if(strike==3) {
