@@ -11,7 +11,7 @@ public final class FinalStatic {//final class -> 상속 불가
 		n3 = n2;
 	}
 	
-	static final void printNum(int input) {
+	static final void printNum(int input) { //static이면 객체를 생성하지 않고도 사용 가능 -> FinalStatic.printNum(1);
 		System.out.println(input);
 		System.out.println(n3); //n3가 static이기 때문에 가능
 	} //메소드에 final -> 오버라이드 불가
