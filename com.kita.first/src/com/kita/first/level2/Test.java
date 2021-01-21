@@ -23,5 +23,13 @@ public class Test {
 		car1.setColor("파란색");
 		System.out.println(car1Color); //getter를 써주지 않으면 들어가지 않음
 		
+		System.out.println();
+		
+		IMac myIMac = new IMac(500, "스페이스 그레이");
+		myIMac.setMemory(800);
+		myIMac.setMemory(600);
+		int myIMacMemory = myIMac.getMemory();
+		System.out.println(myIMacMemory);
+		
 	}
 }
