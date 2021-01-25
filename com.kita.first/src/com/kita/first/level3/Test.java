@@ -21,7 +21,7 @@ public class Test {
 			int result = minsu.readBooks();
 			switch(result) {
 			case 1: //minsu가 book1을 다 읽었을 경우
-				minsu.book1 = new ComicBook(3);
+				minsu.book1 = new ComicBook(8); //book1에 새 만화책을 가져옴
 				System.out.println("새 만화책을 가져왔다.");
 				break;
 			case 2: //minsu가 book2을 다 읽었을 경우
@@ -52,7 +52,13 @@ public class Test {
 		
 		animal = dog;
 		animal.crying();
+		
+		boolean result = animal instanceof Dog;
+		System.out.println(result);
+		
 //		animal.barking(); // 부모 클래스에 있는 필드와 메소드만 접근 가능
+		Dog dog1 = (Dog)animal;
+		dog1.barking();
 		
 //		System.out.println(animal);
 //		System.out.println(cat);
