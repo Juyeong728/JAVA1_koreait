@@ -2,6 +2,16 @@ package com.kita.first.level3;
 
 public class Test {
 	public static void main(String[] args) {
+		ScanNum sn = new ScanNum();
+		String str = sn.inputNumString();
+		int result1 = Utils.parseStrToInt(str);
+		sn.printMsg(result1);
+		
+		
+		
+		
+		
+		
 		ProGamer p1 = new ProGamer();
 		Game game = new Game();
 		p1.playGame(game);
@@ -11,6 +21,7 @@ public class Test {
 		
 		Lol lol = new Lol();
 		p1.playGame(lol);
+		
 		
 		
 		
@@ -35,6 +46,7 @@ public class Test {
 			}
 			System.out.println("------------------");
 		}
+		
 		
 		
 		
