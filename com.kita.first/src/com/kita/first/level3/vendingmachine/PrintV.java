@@ -1,12 +1,15 @@
 package com.kita.first.level3.vendingmachine;
 
 public class PrintV {
+	//메뉴이름과 가격 찍기
+	public void printMenu(Menu menu, int n) {
+		String item = menu.getMenuItem(n);
+		int price = menu.getMenuPrice(n);
+		System.out.printf("%d. %s %d원\n", n+1, item, price);
+	}
 	
-	public void printMenu(int len, String[] menuArr, int[] priceArr) {
-		System.out.println("---메뉴---");
-		for(int i=0; i<len; i++) {
-			System.out.printf("%d. %s %d원\n", i+1, menuArr[i], priceArr[i]);
-		}
+	public void printTotalPrice(Game game) {
+		System.out.printf("합계: %d원\n", game.getTotalPrice());
 	}
 	
 }
