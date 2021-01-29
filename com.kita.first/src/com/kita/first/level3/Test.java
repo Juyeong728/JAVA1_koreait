@@ -51,26 +51,26 @@ public class Test {
 		
 		
 		
-		Animal animal = new Animal();
-		Cat cat = new Cat();
-		Dog dog = new Dog();
+//		Animal animal = new Animal();
+//		Cat cat = new Cat();
+//		Dog dog = new Dog();
 		
-		animal.crying();
+//		animal.crying();
 		
-		animal = new Animal();
-		animal = cat; //부모 안에 자식을 집어넣을 때 자식 타입의 객체는 부모 타입의 객체로 자동 형변환이 가능
+//		animal = new Animal();
+//		animal = cat; //부모 안에 자식을 집어넣을 때 자식 타입의 객체는 부모 타입의 객체로 자동 형변환이 가능
 					  //animal이 cat의 주소를 가리킴
-		animal.crying();
+//		animal.crying();
 		
-		animal = dog;
-		animal.crying();
+//		animal = dog;
+//		animal.crying();
 		
-		boolean result = animal instanceof Dog;
-		System.out.println(result);
+//		boolean result = animal instanceof Dog;
+//		System.out.println(result);
 		
 //		animal.barking(); // 부모 클래스에 있는 필드와 메소드만 접근 가능
-		Dog dog1 = (Dog)animal;
-		dog1.barking();
+//		Dog dog1 = (Dog)animal;
+//		dog1.barking();
 		
 //		System.out.println(animal);
 //		System.out.println(cat);
