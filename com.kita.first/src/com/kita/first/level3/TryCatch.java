@@ -16,13 +16,13 @@ public class TryCatch {
 		}
 		
 		
-		Animal animal = new Animal();
-		Cat cat = new Cat();
-		animal = cat;
+//		Animal animal = new Animal();
+//		Cat cat = new Cat();
+//		animal = cat;
 		
 		try {
-			Dog dog = (Dog)animal;
-			dog.barking();
+//			Dog dog = (Dog)animal;
+//			dog.barking();
 		} catch(Exception e) {
 			e.printStackTrace(); //에러가 나면 찍어줌
 			System.out.println("문제 발생");
