@@ -8,8 +8,9 @@ public class Game { //실행 클래스
 		MyBall myBall = new MyBall(len);
 		
 		System.out.println("숫자야구게임 시작!");
+		
 		do {
-//			myBall.setNumbers();
+			myBall.setNumbers();
 		} while(Checker.check(len, ball, myBall));
 		
 		System.out.println("숫자야구게임 종료!");

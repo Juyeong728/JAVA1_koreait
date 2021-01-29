@@ -6,6 +6,10 @@ public class Baseball { //랜덤 숫자 뽑기 클래스
 	int min = 1;
 	
 	public Baseball(int len) {
+		init(len);
+	}
+	
+	private void init(int len) {
 		rArr = new int[len];
 		setRandom();
 	}
@@ -25,9 +29,5 @@ public class Baseball { //랜덤 숫자 뽑기 클래스
 	public int getRandom(int idx) {
 		return rArr[idx];
 	}
-	
-//	public Baseball(int len) { //생성자는 public
-//		init(len); //메소드는 private
-//	}
 	
 }
