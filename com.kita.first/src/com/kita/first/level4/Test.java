@@ -3,9 +3,16 @@ package com.kita.first.level4;
 public class Test {
 	public static void main(String[] args) {
 		Parent p = new Parent() {
+			String childField = "자식필드";
+			
+			void childMethod() {
+				System.out.println("자식메소드입니다.");
+			}
+			
 			@Override
 			void parentMethod() {
-				System.out.println("자식객체입니다.");
+				childMethod();
+				System.out.println(childField+"자식객체입니다.");
 			};
 		};
 		p.parentMethod();
@@ -20,7 +27,7 @@ public class Test {
 		
 		ThrowsException2 te2 = new ThrowsException2();
 		try {
-			te2.method1();
+			te2.method1(); 
 		} catch(Exception e) {
 			
 		}
